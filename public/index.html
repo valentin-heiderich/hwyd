@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How was your day?</title>
+    <meta name="author" content="Valentin Heiderich">
+    <meta name="keywords" content="How was your day?, How was my day?, How was this day?, Day rating">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="today">
+        <h1>Today's average:</h1>
+        <div class="Stars" style="--rating: 0;" aria-label="Average rating this day."></div>
+    </div>
+    <div class="sep" id="s1"></div>
+    <div>
+        <h1 id="hwyd">How was your day?</h1>
+        <div class="star-rating">
+            <input type="radio" id="5-stars" name="rating" value="5" />
+            <label for="5-stars" class="star">&#9733;</label>
+            <input type="radio" id="4-stars" name="rating" value="4" />
+            <label for="4-stars" class="star">&#9733;</label>
+            <input type="radio" id="3-stars" name="rating" value="3" />
+            <label for="3-stars" class="star">&#9733;</label>
+            <input type="radio" id="2-stars" name="rating" value="2" />
+            <label for="2-stars" class="star">&#9733;</label>
+            <input type="radio" id="1-star" name="rating" value="1" />
+            <label for="1-star" class="star">&#9733;</label>
+        </div>
+        <button id="submit_b">Submit</button>
+        <!--<label for="note">Note:</label>
+        <textarea name="note" id="note" cols="30" rows="10"></textarea>-->
+    </div>
+    <div class="sep" id="s0"></div>
+    <button id="tdm">Toggle view mode</button>
+    <div class="sep" id="s3"></div>
+    <div id="ref">
+        <p>This side is currently in development and managed by <a target="_blank" href="https://www.valentinheiderich.com">Valentin Heiderich</a></p>
+        <p>Owned Domains:
+            <a target="_blank" href="https://www.valentinheiderich.de">valentinheiderich.de</a>,
+            <a target="_blank" href="https://www.valentinheiderich.com">valentinheiderich.com</a>,
+            <a target="_blank" href="https://pulseofthelens.com/">pulseofthelens.com</a>,
+            <a target="_blank" href="https://www.qvtea.com">qvtea.com</a>,
+            <a target="_blank" href="https://hwyd.net">hwyd.net</a>
+        </p>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
