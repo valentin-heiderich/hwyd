@@ -23,11 +23,11 @@ function submit(){
     socket.emit('submit', value);
 }
 
-socket.on('uuid_req' , (proposed_uuid) => {
+socket.on('uuid_req' , (data) => {
     let uuid = localStorage.getItem('uuid');
-    if(uuid == null){
-        localStorage.setItem('uuid', proposed_uuid);
-        uuid = proposed_uuid;
+    if(uuid == null || data[1] === true){
+        localStorage.setItem('uuid', data[0]);
+        uuid = data[0];
     }
     socket.emit('uuid', uuid);
 });
